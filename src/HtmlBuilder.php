@@ -38,6 +38,8 @@ class HtmlBuilder {
 
 		foreach ($attributes as $key => $value)
 		{
+			if (is_null($value)) continue;
+			
 			if (is_numeric($key)) $key = $value;
 
 			$html[] = $key.'="'.$this->entities($value).'"';
