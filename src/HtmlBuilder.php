@@ -12,7 +12,7 @@ class HtmlBuilder {
 	 */
 	public function link($url, $title, $attributes = [])
 	{
-		return '<a href="'.$url.'"'.$this->attributes($attributes).'">'.$this->entities($title).'</a>';
+		return '<a href="'.$url.'"'.$this->attributes($attributes).'>'.$this->entities($title).'</a>';
 	}
 
 	/**
@@ -39,7 +39,7 @@ class HtmlBuilder {
 		foreach ($attributes as $key => $value)
 		{
 			if (is_null($value)) continue;
-			
+
 			if (is_numeric($key)) $key = $value;
 
 			$html[] = $key.'="'.$this->entities($value).'"';
