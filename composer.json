@@ -1,0 +1,17 @@
+{
+    "name": "jasonlewis/menu",
+    "description": "Simple PHP menu generator.",
+    "keywords": ["php", "menu", "laravel"],
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Jason Lewis",
+            "email": "jason.lewis1991@gmail.com"
+        }
+    ],
+    "autoload": {
+    	"psr-4": {
+    		"JasonLewis\\Menu\\": "src"
+    	}
+    }
+}
